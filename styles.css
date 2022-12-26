@@ -48,8 +48,10 @@ body {
 #buttons {
     text-align: center;
     margin-top: 50px;
+    
 }
 #buttons button {
+    font-family: 'Source Code Pro', monospace;
     background-color: #00000060;
     
     color: white;
@@ -63,11 +65,13 @@ body {
     /* backdrop-filter: blur(100px); */
 }
 
+
 .subheading {
+    font-family: 'Source Code Pro', monospace;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    margin-top: 50px;
+    margin:1em;
     
     
 }
