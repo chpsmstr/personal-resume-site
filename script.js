@@ -1,9 +1,9 @@
 let data = {
-    "TLDR": "TLDR Placeholder Text",
-    "Details": "Details Placeholder Text",
+    "TLDR": "I'm Ankkit, a 19 year old full stack developer. I'm currently studying at the University of British Columbia.",
+    "Details": "My name is Ankkit Prakash. I am a 19 year old full stack developer. I'm pursuing a Major in Computer Science and Minor in Mathematics at the University of British Columbia. ",
 }
 function aboutSwitcher(id) {
-    let about = document.getElementById("About");
-    console.log(about);
-    about.innerHTML =  data[id];
+    let about = document.getElementById("about-text");
+    // console.log(about);
+    about.innerText = data[id];
 }

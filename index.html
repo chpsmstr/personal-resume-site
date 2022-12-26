@@ -7,15 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
     <body>
-           
-
-        <!-- <div>
-            <div id="animation-on-load">
-                <h1 id="animation-on-load-text"></h1>
-            </div>
-        </div> -->
 
         <div class="main">
             <div class="text-box" >
@@ -27,17 +23,36 @@
                     About
                 </div>
 
-                <div id="buttons">
-                    <button id="TLDR" onclick="aboutSwitcher(this.id);">
+                <div class="buttons">
+                    <button id="TLDR" onclick="aboutSwitcher(this.id)">
                         TLDR                        
                     </button>
-                    <button id="Details" onclick="aboutSwitcher(this.id);">
+                    <button id="Details" onclick="aboutSwitcher(this.id)">
                         Detailed
                     </button>
                 </div>
 
-                <div id="About">
-                    <p>Details Placeholder Text</p>
+                <div id="about">
+                    <p id="about-text">My name is Ankkit Prakash. I am a 19 year old full stack developer. I'm pursuing a Major in Computer Science and Minor in Mathematics at the University of British Columbia.</p>
+                </div>
+
+                <div>
+                    <div class="subheading">
+                        Projects
+                    </div>
+                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "freeScroll": false, "pageDots": false, "contain": true }'>
+                        <div class="carousel-cell">
+                            <div class="projects-carousel-1">
+                                <div>
+                                    <h3>UBC Okanagan iGEM 2022</h3>
+                                    <p>My personal website. Built using HTML, CSS, and JavaScript.</p>
+                                </div>
+                                <div>
+                                    <img src="images/igem.webp" class="carousel-img">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
