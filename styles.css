@@ -8,6 +8,14 @@ body {
 	height: 100vh;
 }
 
+p {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin:1em;
+    
+    
+}
 /* .gradient {
     background: linear-gradient(-45deg, #000000, #1c0970, #23a6d5, #2dc2f8);
 	background-size: 400% 400%;
@@ -49,11 +57,14 @@ body {
     text-align: center;
     margin-top: 50px;
     
+    
 }
 #buttons button {
+    position: relative;
     font-family: 'Source Code Pro', monospace;
     background-color: #00000060;
-    
+    z-index: 10;
+    border:none;
     color: white;
     padding: 15px 32px;
     text-align: center;
