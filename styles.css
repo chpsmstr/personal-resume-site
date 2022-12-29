@@ -16,12 +16,6 @@ p {
     
     
 }
-/* .gradient {
-    background: linear-gradient(-45deg, #000000, #1c0970, #23a6d5, #2dc2f8);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-    width:100%;
-} */
 
 .main {
     display: block;
@@ -96,25 +90,28 @@ p {
 }
 
 .projects-carousel-1 {
-    padding: 5em;
+   
+    padding-right: 5em;
+    padding-left: 5em;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
 }
 
+.carousel-grid {
+    display: grid;
+}
+
 .carousel-img {
-    width: 80%;
+    width: 100%;
 }
 
 .carousel-text {
     display: grid;
-    
 }
 
-.carousel-text h3{
+.carousel-cell h3{
     color: #fff;
     font-size: 1.5em;
-    
-    
 }
 
 
