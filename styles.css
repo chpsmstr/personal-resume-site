@@ -114,6 +114,21 @@ p {
     font-size: 1.5em;
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    
+}
+.contact-button {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+.contact-img {
+    height: auto;
+    width: 8em;
+}
+
 
 @keyframes gradient {
 	0% {
