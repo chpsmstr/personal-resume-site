@@ -97,8 +97,12 @@ p {
     grid-template-columns: 1.5fr 1fr;
 }
 
-.carousel-grid {
+.grid-display {
     display: grid;
+}
+
+.grid-display-two-columns {
+    grid-template-columns: 1fr 1fr;
 }
 
 .carousel-img {
@@ -128,6 +132,24 @@ p {
     height: auto;
     width: 8em;
 }
+
+#awards {
+    color:white;
+    text-align: left;
+}
+
+#awards ul li b {
+    color:white;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#awards ul li p {
+    color:white;
+    text-align: left;
+    font-size: 1em;
+}
+
 
 
 @keyframes gradient {
