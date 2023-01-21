@@ -178,6 +178,12 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+
+
     body {
         background: #161616;
     }
