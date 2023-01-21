@@ -101,7 +101,7 @@ p {
     display: grid;
 }
 
-.grid-display-two-columns {
+#contacts-and-awards {
     grid-template-columns: 1fr 1fr;
 }
 
@@ -118,11 +118,24 @@ p {
     font-size: 1.5em;
 }
 
+.carousel-img-container {
+    background-color: #79797983;
+    border-radius: 20px;
+}
+
 #contact {
     display: flex;
     justify-content: center;
-    
 }
+
+#awards-wrapper {
+    order:1;
+}
+
+#contact-wrapper {
+    order:2;
+}
+
 .contact-button {
     padding-left: 1.5vw;
     padding-right: 1.5vw;
@@ -177,7 +190,73 @@ p {
         margin: 5%;
     }
 
+    #about #about-text {
+        font-size: 33px;
+    }
 
+    #about {
+        height:12vh;
+    }
+
+    .subheading {
+        font-size: 50px;
+        margin:0.8em;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .carousel-cell h3 {
+        font-size: 35px;
+    }
+
+    .buttons button {
+        padding: 19px 50px;
+        text-align: center;
+        display: inline-block;
+        font-size: 38px;
+        margin: 4px 2px;
+        
+        border-radius: 10px;
+        /* backdrop-filter: blur(100px); */
+    }
+
+    #awards-wrapper {
+        order:1;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    #contact-wrapper {
+        order:2;
+    }
+
+    .carousel-text p {
+        font-size: 33px;
+    }
+
+    .carousel-img-container {
+        order:1;
+    }
+
+    .carousel-text {
+        order:2;
+    }
+
+    #contacts-and-awards {
+        grid-template-columns: 1fr;
+    }
+
+    #awards ul li {
+        font-size: 18px;
+    }
+    #awards ul li b{
+        font-size: 18px;
+    }
+    #awards ul li p{
+        font-size: 18px;
+    }
 
     .projects-carousel-1 {
         grid-template-columns: 1fr;
