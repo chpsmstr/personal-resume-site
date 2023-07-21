@@ -118,6 +118,13 @@ p {
     font-size: 1.5em;
 }
 
+.lb-link {
+    color:lightblue;
+}
+.lb-link:visited {
+    color:lightblue;
+}
+
 .carousel-img-container {
     
     border-radius: 20px;
