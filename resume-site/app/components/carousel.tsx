@@ -2,20 +2,26 @@ import Link from "next/link";
 import Slide from "./slide";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Scrollbar } from "swiper/modules";
+
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Pagination, Navigation } from "swiper/modules";
 
 export default function Carousel() {
   return (
     <Swiper
-    modules={[Pagination, Navigation, Scrollbar]}
+    modules={[Pagination, Navigation,]}
       spaceBetween={50}
       slidesPerView={1}
-      navigation
-      pagination={true}
-      scrollbar={{ draggable: true }}
+      navigation = {true}
+      pagination={{
+        type: "fraction",
+      }}
       className="mySwiper"
     >
+    
       <SwiperSlide>
         <Slide 
             title="Insurance Review and Inspection System"

@@ -23,15 +23,15 @@
   --animate-fade-in-up: fade-in-up 1s ease-in-out 1s 1;
 
   @keyframes fade-in-up {
-              0% {
-                  opacity: 0;
-                  transform: translate3d(0, 100%, 0);
-              }
-              100% {
-                  opacity: 1;
-                  transform: translate3d(0, 0, 0);
-              }
-          }
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
 body {
@@ -40,7 +40,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Swiper navigation styles */
+:root {
+  --swiper-navigation-color: #525252;
+}
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --swiper-navigation-color: #a3a3a3;
+  }
+}
 
 .title {
   @apply text-3xl md:text-5xl;
@@ -64,4 +73,18 @@ body {
 
 .text-2 {
   @apply text-sm md:text-lg;
+}
+
+.swiper-button-prev {
+  background-image: url(/images/arrow-left.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next {
+  background-image: url(/images/arrow-right.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
 }

@@ -21,7 +21,7 @@ export default function Slide({
   viewSite?: string;
 }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 mb-2">
       <div className="slide-image">
         <Image src={image} alt={title} width={500} height={500} className="w-full h-auto rounded-lg" />
       </div>
@@ -32,7 +32,7 @@ export default function Slide({
         {technologies && (
           <div className="technologies mb-4 flex flex-wrap">
             {technologies.map((tech, index) => (
-              <span key={index} className="bg-violet-500 text-white p-1 rounded-sm m-1 text-2">
+              <span key={index} className="md:bg-violet-500 md:text-white md:p-1 md:rounded-sm md:m-1 text-neutral-600 dark:text-neutral-400 mx-1 text-2 ">
                 {tech}
               </span>
             ))}
