@@ -46,7 +46,6 @@ export default function Home() {
     "JavaScript",
     "Golang",
     "Python",
-    "Golang",
     "Java",
     "C++",
     "Linux",
