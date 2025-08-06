@@ -89,7 +89,7 @@ export default function Home() {
               size={3}
             />
 
-            <Icon link="mailto:" PropIcon={MdEmail} size={3} />
+            <Icon link="mailto:ankkit@ankkitp.com" PropIcon={MdEmail} size={3} />
 
             <Icon
               link="https://github.com/chpsmstr"

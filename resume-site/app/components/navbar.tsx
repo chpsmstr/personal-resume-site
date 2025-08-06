@@ -15,7 +15,7 @@ export default function Navbar() {
         <Link href="#projects" className="nav-link md:text-lg text-base font-normal transition-all duration-300 ease-in-out hover:font-bold mx-1">
           Projects
         </Link>
-        <Link href="mailto:" className="nav-link md:text-lg text-base font-normal transition-all duration-300 ease-in-out hover:font-bold mx-1">
+        <Link href="mailto:ankkit@ankkitp.com" className="nav-link md:text-lg text-base font-normal transition-all duration-300 ease-in-out hover:font-bold mx-1">
           Contact
         </Link>
       </div>
