@@ -20,18 +20,24 @@
 }
 
 @theme {
-  --animate-fade-in-up: fade-in-up 1s ease-in-out 1s 1;
+  --animate-fade-in-up: fade-in-up 1s ease-in-out 0.3s both;
 
   @keyframes fade-in-up {
     0% {
       opacity: 0;
-      transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 50px, 0);
     }
     100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
   }
+}
+
+/* Ensure elements with fade-in-up start invisible */
+.animate-fade-in-up {
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
 }
 
 body {

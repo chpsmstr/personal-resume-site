@@ -67,7 +67,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="container flex flex-col gap-24 md mx-auto p-8 place-content-center  w-full h-screen animate-fade-in-up">
+      <div className="container flex flex-col gap-24 md mx-auto p-8 place-content-center w-full h-screen animate-fade-in-up">
         <div>
           <h1 className="title font-black text-center md:mt-10 mt-4 md:my-8 space-y-2">
             HI! I'M ANKKIT
