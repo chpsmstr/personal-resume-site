@@ -23,11 +23,11 @@ export default function Icon({
           height={size}
           className={dark ? "filter invert" : ""}
         /> */}
-        <IconContext.Provider
+        <IconContext
           value={size ? { size: `${size}rem` } : {}}
         >
           <PropIcon />
-        </IconContext.Provider>
+        </IconContext>
       </span>
     </Link>
   );

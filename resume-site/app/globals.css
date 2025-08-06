@@ -75,7 +75,7 @@ body {
   @apply text-sm md:text-lg;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   background-image: url(/images/arrow-left.svg) !important;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -87,4 +87,4 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-}
+} */
