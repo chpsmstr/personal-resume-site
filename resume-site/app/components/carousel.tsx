@@ -21,7 +21,7 @@ export default function Carousel() {
             title="Insurance Review and Inspection System"
             duration="Sept 2024 – Apr 2025"
             description="UBC Capstone Project. Developed a web application for reviewing and comparing insurance documents. Created custom authentication, handled REST API development and fullstack implementation, created unit tests, and a CI Pipeline with GitHub Actions. Handled deployment to linux server with Docker and nginx."
-            image="/images/iris.png"
+            image="/images/iris.webp"
             technologies={[
               "React",
               "Javascript",
@@ -43,7 +43,7 @@ export default function Carousel() {
           title="HEAT Robotics 2025"
           duration="Sept 2024 – Apr 2025"
           description="Vice President, Software Team. Created ROS2 nodes to send and receive Mavlink data packets over radio. Set up bash install scripts to streamline development process for other developers. Wrote detailed documentation for future developer reference. Form and Function 3rd Place MassRobotics 2025."
-          image="/images/EMBR.jpg"
+          image="/images/EMBR.webp"
           technologies={[
             "Python",
             "Linux",
@@ -58,7 +58,7 @@ export default function Carousel() {
 
       <SwiperSlide>
         <Slide
-          title="iGEM Wiki 2022"
+          title="iGEM Wiki"
           duration="2022"
           description="My first ever web development project. Developed a wiki for the UBCO iGEM team to showcase their project. Written in mostly vanilla HTML, CSS, and JS. The team won a Gold Medal for the best Wiki at the 2022 iGEM Grand Jamboree in Paris."
           image="/images/igem.webp"

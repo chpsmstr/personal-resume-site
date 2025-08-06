@@ -23,9 +23,25 @@ export default function Home() {
 
   var [isTLDR, setIsTLDR] = React.useState(true); // State to toggle between full and TLDR
 
-  const full = `I am a ${age} year old full stack developer with a passion for problem solving and a love for technology. I am a graduate from the University of British Columbia with a major in Computer Science and a minor in Mathematics. I have experience in full stack development. I am always looking for new challenges and opportunities to learn and grow as a developer.`;
+  // const full = `I am a ${age}-year-old full-stack developer driven by a commitment to solving complex problems and architecting efficient systems. My journey began at the University of British Columbia, where I earned a degree in Computer Science and a minor in Mathematics. My hands-on experience in full-stack development has equipped me with a versatile skill set. I'm always looking for opportunities to contribute to meaningful projects and collaborate with passionate people. Outside of work, I enjoy strength training, which helps me stay disciplined and focused both in and out of the gym.`;
 
-  const tldr = `I'm a ${age} year old full stack developer with a passion for problem solving and a love for technology.`;
+  const tldr = (
+    <p id="about-text" className="mt-4 px-4 text-1">
+      I'm a {age} year old full-stack developer with a passion for solving
+      complex problems and creating efficient systems. I'm a graduate of the
+      University of British Columbia with a degree in Computer Science, and I am
+      always seeking new challenges and opportunities for growth.
+    </p>
+  );
+
+  const full = (
+    <p id="about-text" className="mt-4 px-4 text-1">
+      I am a {age} year old full-stack developer driven by a commitment to solving complex problems and creating efficient systems. My journey began at the University of British Columbia, where I earned a degree in Computer Science and a minor in Mathematics. My hands-on experience in full-stack development has equipped me with a versatile skill set. I'm always looking for opportunities to contribute to meaningful projects and collaborate with passionate people.
+      <br />
+      <br />
+      Outside of work, I enjoy strength training, which helps me stay disciplined and focused both in and out of the gym.
+    </p>
+  )
 
   const skills = [
     "JavaScript",
@@ -52,78 +68,52 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="container mx-auto p-8 items-center w-full h-screen ">
-        <h1 className="md:text-5xl text-3xl font-bold text-center md:mt-10 mt-4  flex-col md:my-8 space-y-2">
-          HI! I'M ANKKIT
-        </h1>
+      <div className="container flex flex-col gap-24 md mx-auto p-8 place-content-center  w-full h-screen animate-fade-in-up">
+        <div>
+          <h1 className="title font-black text-center md:mt-10 mt-4 md:my-8 space-y-2">
+            HI! I'M ANKKIT
+          </h1>
 
-        <p className="text-center mt-4 px-4 text-lg md:text-2xl">
-          Welcome to my portfolio site! I'm a passionate developer with a knack
-          for creating innovative solutions.
-        </p>
+          <p className="text-center mt-4 px-4 md:px-8 heading-3">
+            Welcome to my portfolio! I'm a full-stack developer who loves creating elegant and efficient applications. Take a look around to see what I've been creating.
+          </p>
+        </div>
 
-        <div className="flex flex-col items-center mt-8 space-y-4">
+        <div className="flex flex-col items-center space-y-4">
           <div
             id="contact-icons"
-            className=" flex justify-between items-center  p-4 w-80 max-w-sm mx-auto"
+            className=" flex justify-between {items-center} p-4 w-80 max-w-sm mx-auto"
           >
             <Icon
               link="https://www.linkedin.com/in/ankkitp"
               PropIcon={FaLinkedin}
               size={3}
-            
             />
 
-            <Icon
-              link="mailto:"
-              PropIcon={MdEmail}
-              size={3}
-            />
+            <Icon link="mailto:" PropIcon={MdEmail} size={3} />
 
             <Icon
               link="https://github.com/chpsmstr"
               PropIcon={FaGithub}
               size={3}
             />
-
-
-            {/* <span className="bg-neutral-500 rounded-full p-3">
-              <Link
-                href="https://www.linkedin.com/in/ankkitp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="md:h-12 md:w-12 h-10 w-10 text-white transition-colors " />
-              </Link>
-            </span>
-
-            <Link href="mailto:" target="_blank" rel="noopener noreferrer">
-              <Mail className="md:h-12 md:w-12 h-10 w-10 text-white transition-colors" />
-            </Link>
-
-            <Link
-              href="https://github.com/chpsmstr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github className="md:h-12 md:w-12 h-10 w-10 text-white transition-colors" />
-            </Link> */}
-          </div>
-
-          <div className="flex justify-center items-center rounded-full p-4 bg-red-500 w-80 max-w-sm mx-auto">
-            <h2 className="text-3xl text-white">Projects</h2>
           </div>
         </div>
+        <Link href={"#projects"}>
+          <div className="flex justify-center items-center rounded-full p-4 bg-violet-500 w-80 max-w-sm mx-auto">
+            <h2 className="heading-1 text-white">Projects</h2>
+          </div>
+        </Link>
       </div>
 
       <div
         id="about"
-        className="container mx-auto md:p-8 p-4 w-full h-screen grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-2"
+        className="container mx-auto md:p-8 p-4 w-full h-screen md:h-150 grid grid-cols-1 md:grid-cols-2 md:gap-8 gap-2"
       >
         {/* Split into about and skills */}
         <div className="about-section ">
-          <span className="flex justify-between items-center lg:mx-8">
-            <h2 className="md:text-3xl text-2xl font-bold text-center">
+          <span className="flex justify-between items-center px-4">
+            <h2 className="heading-1 font-bold text-center">
               About Me
             </h2>
             <span className="flex space-x-4">
@@ -131,12 +121,12 @@ export default function Home() {
                 onClick={() => setIsTLDR(true)}
                 className={`${
                   isTLDR ? "underline" : ""
-                } cursor-pointer md:text-3xl text-2xl font-bold text-center`}
+                } cursor-pointer heading-1 font-bold text-center`}
               >
                 TLDR
               </h2>
               <h2>
-                <span className="mx-1 md:text-3xl text-2xl font-bold text-center">
+                <span className="mx-1 heading-1 font-bold text-center">
                   |
                 </span>
               </h2>
@@ -144,23 +134,21 @@ export default function Home() {
                 onClick={() => setIsTLDR(false)}
                 className={`${
                   !isTLDR ? "underline" : ""
-                } cursor-pointer md:text-3xl text-2xl font-bold text-center`}
+                } cursor-pointer heading-1 font-bold text-center`}
               >
                 Full
               </h2>
             </span>
           </span>
-          <p id="about-text" className="text-center mt-4 px-4 text-lg">
-            {isTLDR ? tldr : full}
-          </p>
+          {isTLDR ? tldr : full}
         </div>
         <div className="skills-section ">
-          <h2 className="md:text-3xl text-2xl font-bold text-center">Skills</h2>
-          <div className="skill-bubbles flex flex-wrap  justify-center items-center mt-4">
+          <h2 className="heading-1 font-bold text-center">Skills</h2>
+          <div className="skill-bubbles flex flex-wrap justify-center items-center mt-4">
             {skills.map((skill, index) => (
               <span
                 key={index}
-                className="skill-bubble bg-purple-800 text-white p-2 rounded-sm m-1"
+                className="skill-bubble bg-violet-500 text-white p-2 rounded-sm m-1"
               >
                 {skill}
               </span>
@@ -173,8 +161,10 @@ export default function Home() {
         id="projects"
         className="container mx-auto p-8 items-center w-full h-screen"
       >
-        <h2 className="text-5xl font-bold mb-4">Projects</h2>
-        <Carousel />
+        <h2 className="heading-1 font-bold mb-4">Projects</h2>
+        <div className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-4">
+          <Carousel />
+        </div>
       </div>
     </div>
   );
