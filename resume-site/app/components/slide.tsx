@@ -23,7 +23,7 @@ export default function Slide({
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-10 mb-2">
       <div className="slide-image">
-        <Image src={image} alt={title} width={500} height={500} className="w-full h-auto rounded-lg" />
+        <Image src={image} alt={title} width={500} height={500} className="w-full h-auto rounded-lg" priority={true}/>
       </div>
       <div className="slide-content justify-center flex flex-col">
         <h3 className="font-bold mb-2 heading-3">{title}</h3>
