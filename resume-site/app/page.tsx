@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "./components/navbar";
-import Icon from "./components/icon";
+import Icon from "./components/icon-component";
 import Carousel from "./components/carousel";
 // import { Github, Linkedin, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -23,7 +23,6 @@ export default function Home() {
 
   var [isTLDR, setIsTLDR] = React.useState(true); // State to toggle between full and TLDR
 
-  // const full = `I am a ${age}-year-old full-stack developer driven by a commitment to solving complex problems and architecting efficient systems. My journey began at the University of British Columbia, where I earned a degree in Computer Science and a minor in Mathematics. My hands-on experience in full-stack development has equipped me with a versatile skill set. I'm always looking for opportunities to contribute to meaningful projects and collaborate with passionate people. Outside of work, I enjoy strength training, which helps me stay disciplined and focused both in and out of the gym.`;
 
   const tldr = (
     <p id="about-text" className="mt-4 px-4 text-1">
