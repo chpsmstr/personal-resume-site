@@ -83,7 +83,7 @@ export default function Home() {
             className=" flex justify-between {items-center} p-4 w-80 max-w-sm mx-auto"
           >
             <Icon
-              link="https://www.linkedin.com/in/ankkitp"
+              link="https://www.linkedin.com/in/ankkp/"
               PropIcon={FaLinkedin}
               size={3}
             />
